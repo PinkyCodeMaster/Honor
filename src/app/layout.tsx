@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/components/theme/theme-provider';
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
 
@@ -8,9 +9,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head />
       <body>
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -24,6 +24,8 @@
 - ESLint configuration with @antfu/eslint-config
 - TailwindCSS integration
 - Basic project structure
+- shadcn/ui installation with all components
+- UI update script for component management
 
 ### 🚧 In Progress
 - Component library setup with shadcn/ui
@@ -173,7 +175,14 @@ pnpm install
 ## Usage
 
 ```sh
+# Start development server
 pnpm run dev
+```
+
+```sh
+# Update all shadcn/ui components to their latest versions
+# This will overwrite existing components with the latest changes
+pnpm run ui:update
 ```
 
 ## Run tests
