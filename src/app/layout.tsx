@@ -15,4 +15,3 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     </html>
   )
 }
-Honor is a curated toolkit designed to honor the best in modern web development. It brings together powerful tools, essential packages, and reliable dependencies to help developers build fast, scalable, and beautifully crafted web applications with ease.
