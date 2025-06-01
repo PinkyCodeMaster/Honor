@@ -160,7 +160,7 @@ importers:
         version: 1.1.2(@types/react-dom@19.1.5(@types/react@19.1.6))(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       zod:
         specifier: ^3.25.42
-        version: 3.25.42
+        version: 3.25.46
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4
@@ -194,7 +194,7 @@ importers:
         version: 1.14.3(hono@4.7.10)
       '@hono/zod-openapi':
         specifier: ^0.18.4
-        version: 0.18.4(hono@4.7.10)(zod@3.25.42)
+        version: 0.18.4(hono@4.7.10)(zod@3.25.46)
       '@libsql/client':
         specifier: ^0.14.0
         version: 0.14.0
@@ -215,7 +215,7 @@ importers:
         version: 0.33.0(@libsql/client@0.14.0)(@types/react@19.1.6)(kysely@0.28.2)(react@19.1.0)
       drizzle-zod:
         specifier: ^0.5.1
-        version: 0.5.1(drizzle-orm@0.33.0(@libsql/client@0.14.0)(@types/react@19.1.6)(kysely@0.28.2)(react@19.1.0))(zod@3.25.42)
+        version: 0.5.1(drizzle-orm@0.33.0(@libsql/client@0.14.0)(@types/react@19.1.6)(kysely@0.28.2)(react@19.1.0))(zod@3.25.46)
       hono:
         specifier: ^4.7.10
         version: 4.7.10
@@ -233,13 +233,13 @@ importers:
         version: 4.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       stoker:
         specifier: 1.4.2
-        version: 1.4.2(@asteasolutions/zod-to-openapi@7.3.2(zod@3.25.42))(@hono/zod-openapi@0.18.4(hono@4.7.10)(zod@3.25.42))(hono@4.7.10)(openapi3-ts@4.4.0)
+        version: 1.4.2(@asteasolutions/zod-to-openapi@7.3.2(zod@3.25.46))(@hono/zod-openapi@0.18.4(hono@4.7.10)(zod@3.25.46))(hono@4.7.10)(openapi3-ts@4.4.0)
       stripe:
         specifier: ^18.2.0
         version: 18.2.0(@types/node@22.15.29)
       zod:
         specifier: ^3.24.2
-        version: 3.25.42
+        version: 3.25.46
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^3.16.0
@@ -423,7 +423,7 @@ importers:
         version: 1.1.2(@types/react-dom@19.1.5(@types/react@19.1.6))(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       zod:
         specifier: ^3.25.42
-        version: 3.25.42
+        version: 3.25.46
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4
@@ -437,6 +437,9 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.1.5(@types/react@19.1.6)
+      process:
+        specifier: ^0.11.10
+        version: 0.11.10
       tailwindcss:
         specifier: ^4
         version: 4.1.8
@@ -4548,6 +4551,10 @@ packages:
   process-warning@5.0.0:
     resolution: {integrity: sha512-a39t9ApHNx2L4+HBnQKqxxHNs1r7KF+Intd8Q/g1bUh6q0WIp9voPXJ/x0j+ZL45KF1pJd9+q2jLIRMfvEshkA==}
 
+  process@0.11.10:
+    resolution: {integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==}
+    engines: {node: '>= 0.6.0'}
+
   promise-limit@2.7.0:
     resolution: {integrity: sha512-7nJ6v5lnJsXwGprnGXga4wx6d1POjvi5Qmf1ivTRxTjH4Z/9Czja/UCMLVmB9N93GeWOU93XaFaEt6jbuoagNw==}
 
@@ -5317,9 +5324,6 @@ packages:
   zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
 
-  zod@3.25.42:
-    resolution: {integrity: sha512-PcALTLskaucbeHc41tU/xfjfhcz8z0GdhhDcSgrCTmSazUuqnYqiXO63M0QUBVwpBlsLsNVn5qHSC5Dw3KZvaQ==}
-
   zod@3.25.46:
     resolution: {integrity: sha512-IqRxcHEIjqLd4LNS/zKffB3Jzg3NwqJxQQ0Ns7pdrvgGkwQsEBdEQcOHaBVqvvZArShRzI39+aMST3FBGmTrLQ==}
 
@@ -5412,10 +5416,10 @@ snapshots:
       call-me-maybe: 1.0.2
       openapi-types: 12.1.3
 
-  '@asteasolutions/zod-to-openapi@7.3.2(zod@3.25.42)':
+  '@asteasolutions/zod-to-openapi@7.3.2(zod@3.25.46)':
     dependencies:
       openapi3-ts: 4.4.0
-      zod: 3.25.42
+      zod: 3.25.46
 
   '@babel/code-frame@7.27.1':
     dependencies:
@@ -5520,7 +5524,7 @@ snapshots:
   '@better-auth/stripe@1.2.8':
     dependencies:
       better-auth: 1.2.8
-      zod: 3.25.42
+      zod: 3.25.46
 
   '@better-auth/utils@0.2.5':
     dependencies:
@@ -5998,17 +6002,17 @@ snapshots:
     dependencies:
       hono: 4.7.10
 
-  '@hono/zod-openapi@0.18.4(hono@4.7.10)(zod@3.25.42)':
+  '@hono/zod-openapi@0.18.4(hono@4.7.10)(zod@3.25.46)':
     dependencies:
-      '@asteasolutions/zod-to-openapi': 7.3.2(zod@3.25.42)
-      '@hono/zod-validator': 0.4.3(hono@4.7.10)(zod@3.25.42)
+      '@asteasolutions/zod-to-openapi': 7.3.2(zod@3.25.46)
+      '@hono/zod-validator': 0.4.3(hono@4.7.10)(zod@3.25.46)
       hono: 4.7.10
-      zod: 3.25.42
+      zod: 3.25.46
 
-  '@hono/zod-validator@0.4.3(hono@4.7.10)(zod@3.25.42)':
+  '@hono/zod-validator@0.4.3(hono@4.7.10)(zod@3.25.46)':
     dependencies:
       hono: 4.7.10
-      zod: 3.25.42
+      zod: 3.25.46
 
   '@hookform/resolvers@5.0.1(react-hook-form@7.56.4(react@19.1.0))':
     dependencies:
@@ -7023,7 +7027,7 @@ snapshots:
     dependencies:
       '@scalar/openapi-types': 0.1.9
       '@unhead/schema': 1.11.20
-      zod: 3.25.42
+      zod: 3.25.46
 
   '@selderee/plugin-htmlparser2@0.11.0':
     dependencies:
@@ -7522,7 +7526,7 @@ snapshots:
       jose: 5.10.0
       kysely: 0.28.2
       nanostores: 0.11.4
-      zod: 3.25.42
+      zod: 3.25.46
 
   better-call@1.0.9:
     dependencies:
@@ -7825,10 +7829,10 @@ snapshots:
       kysely: 0.28.2
       react: 19.1.0
 
-  drizzle-zod@0.5.1(drizzle-orm@0.33.0(@libsql/client@0.14.0)(@types/react@19.1.6)(kysely@0.28.2)(react@19.1.0))(zod@3.25.42):
+  drizzle-zod@0.5.1(drizzle-orm@0.33.0(@libsql/client@0.14.0)(@types/react@19.1.6)(kysely@0.28.2)(react@19.1.0))(zod@3.25.46):
     dependencies:
       drizzle-orm: 0.33.0(@libsql/client@0.14.0)(@types/react@19.1.6)(kysely@0.28.2)(react@19.1.0)
-      zod: 3.25.42
+      zod: 3.25.46
 
   dunder-proto@1.0.1:
     dependencies:
@@ -9363,6 +9367,8 @@ snapshots:
 
   process-warning@5.0.0: {}
 
+  process@0.11.10: {}
+
   promise-limit@2.7.0: {}
 
   prop-types@15.8.1:
@@ -9720,13 +9726,13 @@ snapshots:
 
   std-env@3.9.0: {}
 
-  stoker@1.4.2(@asteasolutions/zod-to-openapi@7.3.2(zod@3.25.42))(@hono/zod-openapi@0.18.4(hono@4.7.10)(zod@3.25.42))(hono@4.7.10)(openapi3-ts@4.4.0):
+  stoker@1.4.2(@asteasolutions/zod-to-openapi@7.3.2(zod@3.25.46))(@hono/zod-openapi@0.18.4(hono@4.7.10)(zod@3.25.46))(hono@4.7.10)(openapi3-ts@4.4.0):
     dependencies:
-      '@asteasolutions/zod-to-openapi': 7.3.2(zod@3.25.42)
+      '@asteasolutions/zod-to-openapi': 7.3.2(zod@3.25.46)
       hono: 4.7.10
       openapi3-ts: 4.4.0
     optionalDependencies:
-      '@hono/zod-openapi': 0.18.4(hono@4.7.10)(zod@3.25.42)
+      '@hono/zod-openapi': 0.18.4(hono@4.7.10)(zod@3.25.46)
 
   streamsearch@1.1.0: {}
 
@@ -10142,8 +10148,6 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zhead@2.2.4: {}
-
-  zod@3.25.42: {}
 
   zod@3.25.46: {}
 
