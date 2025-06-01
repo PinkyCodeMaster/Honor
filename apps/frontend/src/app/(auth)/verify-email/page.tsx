@@ -2,9 +2,9 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, CheckCircle, AlertCircle, RefreshCw } from "lucide-react";
+import { useState, useEffect, useCallback, Suspense } from "react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth-client";
 import { Input } from "@/components/ui/input";
@@ -13,6 +13,24 @@ import { toast } from "sonner";
 import Link from "next/link";
 
 export default function VerifyEmailPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-background flex items-center justify-center p-4">
+        <Card className="w-full max-w-md">
+          <CardContent className="pt-6 text-center">
+            <RefreshCw className="h-16 w-16 text-primary mx-auto mb-4 animate-spin" />
+            <h2 className="text-2xl font-bold mb-2">Loading...</h2>
+            <p className="text-muted-foreground">Please wait while we load the page.</p>
+          </CardContent>
+        </Card>
+      </div>
+    }>
+      <VerifyEmailContent />
+    </Suspense>
+  )
+}
+
+function VerifyEmailContent() {
   const [isLoading, setIsLoading] = useState(false)
   const [isVerifying, setIsVerifying] = useState(false)
   const [error, setError] = useState("")
