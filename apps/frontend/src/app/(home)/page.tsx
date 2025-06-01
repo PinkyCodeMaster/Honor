@@ -42,7 +42,7 @@ export default function HomePage() {
       seller: "OpticsPro",
       rating: 5.0,
       verified: true,
-      image: "/vortex-viper-pst-gen-Ii-525X50.jpg",
+      image: "/VortexViperPstGenIi525X50.jpg",
     },
   ]
 
