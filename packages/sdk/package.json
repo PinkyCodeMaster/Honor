@@ -1,0 +1,20 @@
+{
+  "name": "sdk",
+  "version": "1.0.0",
+  "main": "src/honorClient.ts",
+  "types": "src/honorClient.ts",
+  "exports": {
+    ".": "./src/honorClient.ts"
+  },
+  "scripts": {
+    "generate": "npx openapi-zod-client http://localhost:9000/doc -o ./src/honorClient.ts --api-client-name honorClient",
+    "prepublishOnly": "pnpm generate"
+  },
+  "dependencies": {
+    "@zodios/core": "^10.9.6",
+    "zod": "^3.25.46"
+  },
+  "devDependencies": {
+    "openapi-zod-client": "^1.18.3"
+  }
+}

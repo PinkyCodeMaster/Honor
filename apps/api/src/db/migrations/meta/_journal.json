@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1748703588544,
+      "tag": "0000_dazzling_peter_quill",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1748777440725,
+      "tag": "0001_skinny_goliath",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1748778270101,
+      "tag": "0002_tiny_gorilla_man",
+      "breakpoints": true
+    }
+  ]
+}
